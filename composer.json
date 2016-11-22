@@ -1,0 +1,12 @@
+{
+    "name": "elementweb/phptest",
+    "description": "PHP Backend test application",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Kostas Gliozeris",
+            "email": "kostasmgl@gmail.com"
+        }
+    ],
+    "require": {}
+}
