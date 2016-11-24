@@ -25,6 +25,10 @@ Front-end:
 2. Bootstrap Date Picker (http://bootstrap-datepicker.readthedocs.io/en/latest/index.html).
 3. Vue.js, Vue-resource component.
 
+# Database:
+
+SQL dump available: https://github.com/elementweb/phptest/blob/master/phptest.sql
+
 # Comments:
 
 This is PHP Back-end test written for BuildEmpire Ltd to support my application.
