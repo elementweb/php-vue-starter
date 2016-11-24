@@ -17,6 +17,8 @@ class DatabaseController extends Controller
         Builder::populateProducts();
 
         Builder::buildQuoteProducts();
+
+        return "database built!";
     }
 
     public function destroyAll()
@@ -28,5 +30,7 @@ class DatabaseController extends Controller
         Builder::destroyQuotes();
 
         Builder::destroyUsers();
+
+        return "database destroyed!";
     }
 }
