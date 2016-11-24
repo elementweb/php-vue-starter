@@ -44,11 +44,4 @@ class ServicesController extends Controller
             18 => "6pm - 7pm"
         ]);
     }
-
-    public function serviceDetails($arg)
-    {
-        $data = Service::find($arg['service_id']);
-
-        return json_encode($data);
-    }
 }

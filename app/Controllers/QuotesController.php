@@ -141,15 +141,4 @@ class QuotesController extends Controller
         
         return View::make('public', 'public.quote-complete', $data);
     }
-
-    public function deleteQuote()
-    {
-        $data = [
-        	"action" => "delete",
-
-        	"quote_id" => $_POST['id']
-        ];
-
-        return json_encode($data);
-    }
 }

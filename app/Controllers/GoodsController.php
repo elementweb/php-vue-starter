@@ -12,11 +12,4 @@ class GoodsController extends Controller
 
         return Good::all();
     }
-
-    public function goodDetails($arg)
-    {
-        $data = Good::find($arg['good_id']);
-
-        return json_encode($data);
-    }
 }
