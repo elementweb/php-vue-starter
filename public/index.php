@@ -39,11 +39,11 @@ $match = $router->match();
 if ($match === false) {
     echo App\Helpers\View::error('404');
 } else {
-	list( $controller, $action ) = explode( '#', $match['target'] );
-	if ( is_callable(array($controller, $action)) ) {
-	    $obj = new $controller();
-	    echo call_user_func_array(array($obj, $action), array($match['params']));
-	} else {
-    	echo App\Helpers\View::error('404');
-	}
+    list( $controller, $action ) = explode( '#', $match['target'] );
+    if ( is_callable(array($controller, $action)) ) {
+        $obj = new $controller();
+        echo call_user_func_array(array($obj, $action), array($match['params']));
+    } else {
+        echo App\Helpers\View::error('404');
+    }
 }
