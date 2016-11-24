@@ -46,6 +46,7 @@ class DatabaseBuilder extends Helper
             $table->string('hash');
             $table->integer('user_id');
             $table->float('charge_total');
+            $table->boolean('dismiss')->default(false);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

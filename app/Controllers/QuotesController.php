@@ -132,13 +132,21 @@ class QuotesController extends Controller
 
     public function displayQuoteComplete($arg)
     {
-        $quote = Quote::where('hash', $arg['quote_hash'])->get()->toArray();
-        $quote = reset($quote);
+        $quote = Quote::where('hash', $arg['quote_hash'])->first();
 
-        $data = [
-            "quote" => $quote
-        ];
-        
-        return View::make('public', 'public.quote-complete', $data);
+        if(!$quote->dismiss)
+        {
+            $quote->dismiss = true;
+            $quote->save();
+            
+            $data = [
+                "quote_hash" => $quote->hash,
+                "charge_total" => $quote->charge_total
+            ];
+            
+            return View::make('public', 'public.quote-complete', $data);
+        } else {
+            return View::error('404');
+        }
     }
 }
