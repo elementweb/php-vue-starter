@@ -14,6 +14,8 @@ class AdminController extends Controller
     public function displayDashboard()
     {
         $data = [
+            "new_quotes" => Quote::all()->count(),
+            "new_users" => User::all()->count()
         ];
 
         return View::make('admin', 'admin.dashboard', $data);
