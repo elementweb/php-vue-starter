@@ -1,6 +1,8 @@
-# PHP Test
+# Sample PHP application
 
-PHP Backend Developer Test application
+This is a very good starting point for someone looking to develop nicely structured PHP application. No frameworks used, only a couple of components to make everything easier.
+
+-- Kostas Gliozeris
 
 # Set-up
 
@@ -28,11 +30,3 @@ Front-end:
 # Database:
 
 SQL dump available: https://github.com/elementweb/phptest/blob/master/phptest.sql
-
-# Comments:
-
-This is PHP Back-end test written for BuildEmpire Ltd to support my application.
-
-It took me around ~8 hours to complete the Back-end side and around another ~8 hours to complete the Front-end.
-
--- Kostas Gliozeris
