@@ -6,17 +6,17 @@ use Hautelook\Phpass\PasswordHash;
 
 class User extends BaseModel
 {
-	/**
-	 * Get the quotes for the user.
-	 */
-	public function quotes()
-	{
-		return $this->hasMany('App\Models\Quote');
-	}
+    /**
+     * Get the quotes for the user.
+     */
+    public function quotes()
+    {
+        return $this->hasMany('App\Models\Quote');
+    }
 
-	public static function addNew($data)
-	{
-		$user = new self();
+    public static function addNew($data)
+    {
+        $user = new self();
 
         $user->first_name = $data['first_name'];
         $user->last_name = $data['last_name'];
@@ -29,5 +29,5 @@ class User extends BaseModel
         $user->save();
 
         return $user->id;
-	}
+    }
 }

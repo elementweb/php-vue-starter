@@ -8,9 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-		$data = [
-		];
+        $data = [
+        ];
 
-		return View::make('public', 'public.home', $data);
+        return View::make('public', 'public.home', $data);
     }
 }

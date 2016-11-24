@@ -6,27 +6,27 @@ use App\Helpers\DatabaseBuilder as Builder;
 
 class DatabaseController extends Controller
 {
-	public function buildAll()
-	{
-		Builder::buildUsers();
+    public function buildAll()
+    {
+        Builder::buildUsers();
 
-		Builder::buildQuotes();
+        Builder::buildQuotes();
 
-		Builder::buildProducts();
+        Builder::buildProducts();
 
-		Builder::populateProducts();
+        Builder::populateProducts();
 
-		Builder::buildQuoteProducts();
-	}
+        Builder::buildQuoteProducts();
+    }
 
-	public function destroyAll()
-	{
-		Builder::destroyQuoteProducts();
+    public function destroyAll()
+    {
+        Builder::destroyQuoteProducts();
 
-		Builder::destroyProducts();
+        Builder::destroyProducts();
 
-		Builder::destroyQuotes();
+        Builder::destroyQuotes();
 
-		Builder::destroyUsers();
-	}
+        Builder::destroyUsers();
+    }
 }
