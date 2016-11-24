@@ -31,4 +31,4 @@ This is PHP Back-end test written for BuildEmpire Ltd to support my application
 
 It took me around ~8 hours to complete the Back-end side and around another ~8 hours to complete the Front-end.
 
-- Kostas Gliozeris
+-- Kostas Gliozeris
