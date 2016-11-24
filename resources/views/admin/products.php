@@ -8,7 +8,7 @@
 	<thead>
 		<tr>
 			<th>Subscription title</th>
-			<th>Price / day (€)</th>
+			<th style="width:150px;">Price / day (€)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,7 +27,7 @@
 	<thead>
 		<tr>
 			<th>Service title</th>
-			<th>Price / hour (€)</th>
+			<th style="width:150px;">Price / hour (€)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -46,7 +46,7 @@
 	<thead>
 		<tr>
 			<th>Good title</th>
-			<th>Unit price (€)</th>
+			<th style="width:150px;">Unit price (€)</th>
 		</tr>
 	</thead>
 	<tbody>
