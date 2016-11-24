@@ -29,7 +29,7 @@ $capsule->bootEloquent();
 
 $router = new \AltoRouter();
 
-$router->setBasePath($config['base_path']);
+$router->setBasePath("");
 
 // load route maps
 require __DIR__ . '/../config/routes.php';
