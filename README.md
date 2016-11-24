@@ -11,4 +11,4 @@ PHP Backend test application
 
 # demo
 
-Demo can be accessed on http://gate5.stargate.lt/
+Demo can be accessed on http://gate4.stargate.lt/
