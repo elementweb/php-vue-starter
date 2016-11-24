@@ -1,5 +1,19 @@
 <h2>Quotes</h2>
 
-<?php foreach($quotes as $quote){ ?>
-<p>(#<?= $quote['hash'] ?>) Total charge: €<?= $quote['charge_total'] ?></p>
-<?php } ?>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Quote ID</th>
+      <th>Total amount (€)</th>
+      <th>User ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach($quotes as $quote){ ?>
+    <tr>
+    	<td><?= $quote['hash'] ?></td>
+    	<td><?= $quote['charge_total'] ?></td>
+    	<td><?= $quote['user_id'] ?></td>
+    <?php } ?>
+  </tbody>
+</table>
