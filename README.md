@@ -8,8 +8,8 @@ This is a very good starting point for someone looking to develop nicely structu
 
 1. Set 'public' folder as domain root so that it is accessed as like as follows: http://test.local/.
 2. Run 'composer update'.
-3. Configure database host, user, password and database name in 'config/database.php'.
-4. Run command to build the database by visiting URL '/database/build'. To recreate the database, first destroy it using '/database/destroy' and then recreate it again using '/database/build'.
+3. Create new database on your MySQL server then configure application to use host, user, password and database name in 'config/database.php'.
+4. Run command to build the database by visiting URL '/database/build'. This will create database tables and populate products tables (subscriptions, services and goods) with fake data. To recreate the database, firstly destroy it using '/database/destroy' and then create it again using '/database/build'.
 5. Application is ready to go.
 
 # Components used
@@ -25,8 +25,11 @@ Back-end:
 Front-end:
 
 1. Bootstrap v3.3.7.
-2. Bootstrap Date Picker (http://bootstrap-datepicker.readthedocs.io/en/latest/index.html).
-3. Vue.js, Vue-resource component.
+2. jQuery v1.11.1.
+3. Bootstrap Date Picker (http://bootstrap-datepicker.readthedocs.io/en/latest/index.html).
+4. Vue.js, Vue-resource component.
+5. Moment.js (https://github.com/moment/moment/).
+6. Font-Awesome (https://github.com/FortAwesome/Font-Awesome).
 
 # Database:
 
